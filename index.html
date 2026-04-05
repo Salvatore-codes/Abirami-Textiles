@@ -200,21 +200,19 @@
 
 <div class="marquee-strip">
   <div class="marquee-inner">
-    <span>Cotton Sarees</span><span>Silk Sarees</span><span>Dress Materials</span>
-    <span>Blouse Pieces</span><span>Kurtis</span><span>Lungis</span>
-    <span>Veshti</span><span>Bed Sheets</span><span>Towels</span>
-    <span>Home Furnishings</span><span>Kids Wear</span><span>Lehengas</span>
-    <span>Cotton Sarees</span><span>Silk Sarees</span><span>Dress Materials</span>
-    <span>Blouse Pieces</span><span>Kurtis</span><span>Lungis</span>
-    <span>Veshti</span><span>Bed Sheets</span><span>Towels</span>
-    <span>Home Furnishings</span><span>Kids Wear</span><span>Lehengas</span>
+    <span>All Variety of Sarees</span><span>Blouse Pieces</span><span>Lining Materials</span>
+    <span>Inner Garments</span><span>Wholesale at Tirupur Prices</span><span>Dress Materials</span>
+    <span>All Variety of Sarees</span><span>Blouse Pieces</span><span>Lining Materials</span>
+    <span>Inner Garments</span><span>Wholesale at Tirupur Prices</span><span>Dress Materials</span>
+    <span>All Variety of Sarees</span><span>Blouse Pieces</span><span>Lining Materials</span>
+    <span>Inner Garments</span><span>Wholesale at Tirupur Prices</span><span>Dress Materials</span>
   </div>
 </div>
 
 <section id="categories">
   <div class="section-label">Shop By Type</div>
   <div class="section-title">Browse Categories</div>
-  <p class="section-sub">We stock everything — from everyday wear to festive collections for the whole family.</p>
+  <p class="section-sub">We stock All Variety of Sarees, Blouse Pieces, Lining Materials, and Inner Garments.<br/><br/><strong style="color:var(--accent-blue);">Not only retail, we also do Wholesale too, that too in Tirupur price!</strong></p>
   <div class="category-grid" id="catGrid"></div>
 </section>
 
@@ -235,7 +233,7 @@
     <div class="feature-card"><div class="feature-icon">💰</div><div class="feature-title">Fair Prices</div><div class="feature-text">No middlemen. Direct from manufacturer to you — honest pricing always.</div></div>
     <div class="feature-card"><div class="feature-icon">🎨</div><div class="feature-title">Huge Variety</div><div class="feature-text">Cotton to silk, plain to printed — thousands of designs in every category.</div></div>
     <div class="feature-card"><div class="feature-icon">🤝</div><div class="feature-title">Personal Service</div><div class="feature-text">Our staff help you pick the right fabric for any occasion — weddings, daily wear, gifting.</div></div>
-    <div class="feature-card"><div class="feature-icon">📦</div><div class="feature-title">Bulk Orders</div><div class="feature-text">Special rates for bulk purchases, uniform orders, and corporate gifting.</div></div>
+    <div class="feature-card"><div class="feature-icon">📦</div><div class="feature-title">Wholesale Pricing</div><div class="feature-text">Not only retail, we also do Wholesale too, that too in Tirupur price! Special rates for bulk purchases.</div></div>
     <div class="feature-card"><div class="feature-icon">✂️</div><div class="feature-title">Custom Cutting</div><div class="feature-text">Get fabric cut to your exact measurements in-store — no waste, no hassle.</div></div>
   </div>
 </section>
@@ -267,10 +265,10 @@
         <label>What are you looking for?</label>
         <select id="fcat">
           <option value="">Select a category…</option>
-          <option>Cotton Sarees</option><option>Silk Sarees</option>
-          <option>Dress Materials</option><option>Kurtis & Tops</option>
-          <option>Men's Wear</option><option>Kids Wear</option>
-          <option>Home Furnishings</option><option>Blouse Pieces</option><option>Other</option>
+          <option>All Variety of Sarees</option><option>Blouse Pieces</option>
+          <option>Lining Materials</option><option>Inner Garments</option>
+          <option>Dress Materials</option><option>Wholesale Order</option>
+          <option>Other</option>
         </select>
       </div>
       <div class="form-group"><label>Message (optional)</label><textarea id="fmsg" placeholder="Any specific design, colour, or quantity…"></textarea></div>
@@ -291,29 +289,27 @@
 const PHONE = "91948849628"; // ← UPDATE THIS to your real WhatsApp number
 
 const categories = [
-  { name:"Cotton Sarees",    icon:"🥻", count:120 },
-  { name:"Silk Sarees",      icon:"✨", count:85  },
-  { name:"Dress Materials",  icon:"🎀", count:200 },
-  { name:"Kurtis & Tops",    icon:"👚", count:150 },
-  { name:"Men's Wear",       icon:"👔", count:90  },
-  { name:"Kids Wear",        icon:"👗", count:70  },
-  { name:"Home Furnishings", icon:"🛋️", count:60  },
-  { name:"Blouse Pieces",    icon:"🧵", count:110 },
+  { name:"All Variety of Sarees", icon:"🥻", count:250 },
+  { name:"Blouse Pieces",         icon:"🧵", count:180 },
+  { name:"Lining Materials",      icon:"📏", count:120 },
+  { name:"Inner Garments",        icon:"🩱", count:150 },
+  { name:"Dress Materials",       icon:"🎀", count:200 },
+  { name:"Wholesale",             icon:"📦", count:"Tirupur Prices"},
 ];
 
 const products = [
-  { name:"Kanjivaram Silk Saree",  category:"Silk Sarees",      price:"₹4,500", unit:"per saree",  badge:"Bestseller", desc:"Pure Kanjivaram silk with gold zari border. Ideal for weddings & festivals.", color:"linear-gradient(135deg,#7c3aed,#c4b5fd)", emoji:"🥻" },
-  { name:"Pure Cotton Daily Saree",category:"Cotton Sarees",     price:"₹650",   unit:"per saree",  badge:"Popular",    desc:"Soft breathable cotton in 50+ colour options. Perfect for everyday wear.",    color:"linear-gradient(135deg,#0369a1,#7dd3fc)", emoji:"🥻" },
-  { name:"Pattu Pavadai Set",      category:"Kids Wear",         price:"₹1,200", unit:"per set",    badge:"New",        desc:"Beautiful silk pavadai for girls aged 2–12. Comes with matching blouse.",     color:"linear-gradient(135deg,#db2777,#fbcfe8)", emoji:"👗" },
-  { name:"Cotton Dress Material",  category:"Dress Materials",   price:"₹380",   unit:"per metre",  badge:"",           desc:"High-quality cotton prints for stitching. Available in 200+ patterns.",       color:"linear-gradient(135deg,#059669,#6ee7b7)", emoji:"🎀" },
-  { name:"Men's Veshti Set",       category:"Men's Wear",        price:"₹950",   unit:"per set",    badge:"Bestseller", desc:"Premium white veshti with angavastram. 8-count fine cotton.",                 color:"linear-gradient(135deg,#1e3a6e,#93c5fd)", emoji:"👔" },
-  { name:"Floral Kurti Fabric",    category:"Kurtis & Tops",     price:"₹220",   unit:"per metre",  badge:"",           desc:"Lightweight printed fabric for kurtis. Easy care, anti-shrink finish.",       color:"linear-gradient(135deg,#b45309,#fde68a)", emoji:"👚" },
-  { name:"Silk Blouse Piece",      category:"Blouse Pieces",     price:"₹450",   unit:"per piece",  badge:"New",        desc:"Ready-to-stitch silk blouse pieces in 80+ colours. Matched to our sarees.",   color:"linear-gradient(135deg,#9f1239,#fca5a5)", emoji:"🧵" },
-  { name:"Cotton Bed Sheet Set",   category:"Home Furnishings",  price:"₹1,100", unit:"per set",    badge:"",           desc:"Double bed sheet with 2 pillow covers. 100% cotton, 200 thread count.",       color:"linear-gradient(135deg,#374151,#9ca3af)", emoji:"🛋️" },
-  { name:"Banarasi Silk Saree",    category:"Silk Sarees",       price:"₹6,800", unit:"per saree",  badge:"Premium",    desc:"Authentic Banarasi weave with intricate floral motifs. Wedding special.",      color:"linear-gradient(135deg,#c9a84c,#fef08a)", emoji:"🥻" },
-  { name:"Handloom Cotton Saree",  category:"Cotton Sarees",     price:"₹1,200", unit:"per saree",  badge:"",           desc:"Handwoven by local weavers. Unique texture and natural dyes.",                color:"linear-gradient(135deg,#065f46,#34d399)", emoji:"🥻" },
-  { name:"Churidar Material Set",  category:"Dress Materials",   price:"₹700",   unit:"per set",    badge:"Popular",    desc:"Top + bottom + dupatta fabric set in coordinated prints.",                    color:"linear-gradient(135deg,#4f46e5,#a5b4fc)", emoji:"🎀" },
-  { name:"Kids Cotton Frock",      category:"Kids Wear",         price:"₹400",   unit:"per piece",  badge:"",           desc:"Fun printed cotton frocks for ages 1–10. Cool and comfortable.",              color:"linear-gradient(135deg,#0891b2,#67e8f9)", emoji:"👗" },
+  { name:"Kanjivaram Silk Saree",  category:"All Variety of Sarees", price:"₹4,500", unit:"per saree",  badge:"Bestseller", desc:"Pure Kanjivaram silk with gold zari border. Ideal for weddings & festivals.", color:"linear-gradient(135deg,#7c3aed,#c4b5fd)", emoji:"🥻" },
+  { name:"Pure Cotton Daily Saree",category:"All Variety of Sarees", price:"₹650",   unit:"per saree",  badge:"Popular",    desc:"Soft breathable cotton in 50+ colour options. Perfect for everyday wear.",    color:"linear-gradient(135deg,#0369a1,#7dd3fc)", emoji:"🥻" },
+  { name:"Premium Lining Cloth",   category:"Lining Materials",      price:"₹120",   unit:"per metre",  badge:"New",        desc:"Breathable and fast-color lining materials in 100+ shades.",                  color:"linear-gradient(135deg,#db2777,#fbcfe8)", emoji:"📏" },
+  { name:"Cotton Dress Material",  category:"Dress Materials",       price:"₹380",   unit:"per metre",  badge:"",           desc:"High-quality cotton prints for stitching. Available in 200+ patterns.",       color:"linear-gradient(135deg,#059669,#6ee7b7)", emoji:"🎀" },
+  { name:"Ladies Innerwear Set",   category:"Inner Garments",        price:"₹450",   unit:"per set",    badge:"Bestseller", desc:"Comfortable daily-wear cotton inner garments for women.",                     color:"linear-gradient(135deg,#1e3a6e,#93c5fd)", emoji:"🩱" },
+  { name:"Men's Inner Vests",      category:"Inner Garments",        price:"₹220",   unit:"per pack",   badge:"",           desc:"Export quality cotton vests. Sweat-absorbent and soft.",                      color:"linear-gradient(135deg,#b45309,#fde68a)", emoji:"👕" },
+  { name:"Silk Blouse Piece",      category:"Blouse Pieces",         price:"₹450",   unit:"per piece",  badge:"New",        desc:"Ready-to-stitch silk blouse pieces in 80+ colours. Matched to our sarees.",   color:"linear-gradient(135deg,#9f1239,#fca5a5)", emoji:"🧵" },
+  { name:"Cotton Blouse Piece",    category:"Blouse Pieces",         price:"₹150",   unit:"per piece",  badge:"",           desc:"100% fine cotton soft blouse pieces. Very comfortable.",                      color:"linear-gradient(135deg,#374151,#9ca3af)", emoji:"🧵" },
+  { name:"Banarasi Silk Saree",    category:"All Variety of Sarees", price:"₹6,800", unit:"per saree",  badge:"Premium",    desc:"Authentic Banarasi weave with intricate floral motifs. Wedding special.",      color:"linear-gradient(135deg,#c9a84c,#fef08a)", emoji:"🥻" },
+  { name:"Wholesale Bulk Sarees",  category:"Wholesale",             price:"₹Bulk",  unit:"Tirupur rate",badge:"Offers",    desc:"Get wholesale pricing for bulk saree & material purchases for resale.",       color:"linear-gradient(135deg,#065f46,#34d399)", emoji:"📦" },
+  { name:"Churidar Material Set",  category:"Dress Materials",       price:"₹700",   unit:"per set",    badge:"Popular",    desc:"Top + bottom + dupatta fabric set in coordinated prints.",                    color:"linear-gradient(135deg,#4f46e5,#a5b4fc)", emoji:"🎀" },
+  { name:"Handloom Cotton Saree",  category:"All Variety of Sarees", price:"₹1,200", unit:"per saree",  badge:"",           desc:"Handwoven by local weavers. Unique texture and natural dyes.",                color:"linear-gradient(135deg,#0891b2,#67e8f9)", emoji:"🥻" },
 ];
 
 // Render categories
@@ -322,7 +318,7 @@ categories.forEach(c => {
   catGrid.innerHTML += `<a class="cat-card" href="#catalog" onclick="filterBy('${c.name}')">
     <div class="cat-icon">${c.icon}</div>
     <div class="cat-name">${c.name}</div>
-    <div class="cat-count">${c.count}+ designs</div>
+    <div class="cat-count">${typeof c.count === 'string' ? c.count : c.count + '+ designs'}</div>
   </a>`;
 });
 
